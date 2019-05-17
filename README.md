@@ -1,8 +1,8 @@
 
-Show stars for github repo
-https://pavelporoskov.github.io/github-link/
+Show stars for github repo. Demo https://pavelporoskov.github.io/github-link/
 
 #use 
+```javascript
 function App() {
   return (
     <div className="App">
@@ -12,3 +12,4 @@ function App() {
     </div>
   );
 }
+```
