@@ -1,8 +1,12 @@
 
 Show stars for github repo. Demo https://pavelporoskov.github.io/github-link/
 
-#use 
+## Usage
+
 ```javascript
+import React from 'react';
+import GitHubLink from './github-link';
+
 function App() {
   return (
     <div className="App">
