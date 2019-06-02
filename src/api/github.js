@@ -20,10 +20,19 @@ function link2api(link) {
   return linkApi
 }
 
-async function fetchGitHubRepoData(link) {
+async function fetchApi(link) {
 
   const linkApi = link2api(link)
   const data = await fetch(linkApi)
+
+  // console.log('github')
+  // console.log(data)
+  // let tt = await data.text()
+  // console.log(`11${tt}11`)
+
+  //SyntaxError: "JSON.parse: unexpected end of data at line 1 column 1 of the JSON data"
+  //data.body: null
+  //data.type: opaque
   const dataJosn = await data.json()
 
   return {
@@ -42,5 +51,5 @@ async function fetchGitHubRepoData(link) {
 }
 
 export {
-  fetchGitHubRepoData
+  fetchApi
 }

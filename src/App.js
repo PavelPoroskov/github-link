@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import GitHubLink from './GitHubLink';
+/*
 import GitHubLinkList from './GitHubLinkList';
 
 const links = [
@@ -23,13 +25,19 @@ const links = [
   "https://github.com/immerjs/immer",
   "https://github.com/microsoft/TypeScript",
   "https://github.com/nodejs/node",
+  "https://github.com/facebook/create-react-app",
 ]
+*/
 
 function App() {
 
   return (
     <div className="App">
+      <GitHubLink link='https://github.com/facebook/create-react-app'/>
+      <br/>
+      {/* 
       <GitHubLinkList links={links}/>
+      */}
     </div>
   );
 }
