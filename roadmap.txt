@@ -2,6 +2,12 @@
 next
 ====
 
-) get from npmjs: latest version, weekly downloads, size
-) style
-	?use CSS Modules
+) get from npmjs: 
+	latest version, 
+	weekly downloads, 
+	size
+
+	last update date
+
+
+tests: vitest or jest

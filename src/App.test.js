@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'
+import { act } from 'react-dom/test-utils';
 import App from './App';
 
-it('renders without crashing', () => {
+it('renders without crashing', async () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  await act( async () => {
+    const root = ReactDOM.createRoot(div);
+    root.render(<App />)
+
+    root.unmount()
+  })
 });
