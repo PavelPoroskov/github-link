@@ -33,20 +33,20 @@ async function fetchApi(link) {
   //SyntaxError: "JSON.parse: unexpected end of data at line 1 column 1 of the JSON data"
   //data.body: null
   //data.type: opaque
-  const dataJosn = await data.json()
+  const dataJson = await data.json()
 
   return {
-    name: dataJosn.name, // relay
-    full_name: dataJosn.full_name, // facebook/relay
-    stargazers_count: dataJosn.stargazers_count,
-    homepage: dataJosn.homepage, //"https://facebook.github.io/relay/"
+    name: dataJson.name, // relay
+    full_name: dataJson.full_name, // facebook/relay
+    stargazers_count: dataJson.stargazers_count,
+    homepage: dataJson.homepage, //"https://facebook.github.io/relay/"
 
-    created_at: dataJosn.created_at, // "2015-08-10T22:09:16Z"
-    updated_at: dataJosn.updated_at,
-    pushed_at: dataJosn.pushed_at,
+    created_at: dataJson.created_at, // "2015-08-10T22:09:16Z"
+    updated_at: dataJson.updated_at,
+    pushed_at: dataJson.pushed_at,
 
-    size: dataJosn.size, 
-    archived: dataJosn.archived, 
+    size: dataJson.size, 
+    archived: dataJson.archived, 
   }
 }
 
